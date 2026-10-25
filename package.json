@@ -1,0 +1,13 @@
+{
+  "name": "territory-drive",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "sample": "node tools/gen-sample.mjs",
+    "roads": "node tools/fetch-roads.mjs",
+    "test": "node tests/sim.mjs && node tests/roadlib.test.mjs",
+    "vendor": "cp node_modules/@turf/turf/turf.min.js vendor/turf.min.js"
+  },
+  "devDependencies": { "@turf/turf": "^7.2.0" }
+}
